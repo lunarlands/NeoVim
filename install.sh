@@ -1,9 +1,14 @@
 echo "TZGML & Republic Of Lunar's NVIM | Installer"
-echo "This script will run after 3 second. (Ctrl+C EXIT)"
-sleep 3
-echo "1) Clean & mkdir"
+
+echo "\e[35m::\e[0m Are you sure about that? [Enter YES]"
+read confirm
+if [[ $confirm -ne "YES" ]]; then
+    exit
+fi
+
+echo -e "\e[35m1) Clean & mkdir\e[0m"
 sudo mv -i ~/.config/nvim ~/.config/nvim.bak
-echo "2) Download init.lua"
+echo -e "\e[35m2) Download init.lua\e[0m"
 sudo git clone https://mirror.ghproxy.com/github.com/lunarlands/NeoVim.git ~/.config/nvim
-echo "3) Enjoy!"
+echo -e "\e[35m3) Enjoy!\e[0m"
 sudo nvim
