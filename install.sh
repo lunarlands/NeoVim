@@ -1,6 +1,6 @@
 echo "TZGML & Republic Of Lunar's NVIM | Installer"
 
-echo "\e[35m::\e[0m Are you sure about that? [Enter YES]"
+echo -e "\e[35m::\e[0m Are you sure about that? [Enter YES]"
 read confirm
 if [[ $confirm -ne "YES" ]]; then
     exit
