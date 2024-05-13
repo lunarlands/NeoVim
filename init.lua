@@ -42,7 +42,6 @@ if vim.g.neovide then
     vim.neovide_confirm_quit = true
 end
 
-
 -----------------------------------------------------------------
 -- Model 2 - Package Manager                                    |
 -----------------------------------------------------------------
@@ -481,7 +480,9 @@ require("lazy").setup({{"RRethy/vim-illuminate"}, {
     config = function()
         require("symbols-outline").setup()
     end
-}, {"saadparwaiz1/cmp_luasnip"}})
+}, {"saadparwaiz1/cmp_luasnip"
+}, {"nvim-neorg/neorg"},
+})
 
 
 
@@ -874,3 +875,4 @@ wk.register({
 }, {
     prefix = "<leader>"
 })
+
