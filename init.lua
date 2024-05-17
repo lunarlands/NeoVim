@@ -132,11 +132,12 @@ require("lazy").setup({{"RRethy/vim-illuminate"}, {
     "nvim-lualine/lualine.nvim",
     requires = {
         "nvim-tree/nvim-web-devicons",
-        opt = true
+        opt = true,
     },
     dependencies = {"arkav/lualine-lsp-progress"},
     config = function()
-        require("lualine").setup()
+        require('lualine').setup {
+        }
     end
 }, {
     "nvim-tree/nvim-tree.lua",
@@ -481,7 +482,7 @@ require("lazy").setup({{"RRethy/vim-illuminate"}, {
         require("symbols-outline").setup()
     end
 }, {"saadparwaiz1/cmp_luasnip"
-}, {"nvim-neorg/neorg"},
+}, 
 })
 
 
@@ -875,4 +876,5 @@ wk.register({
 }, {
     prefix = "<leader>"
 })
+
 
