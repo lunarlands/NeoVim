@@ -137,7 +137,7 @@ require("lazy").setup({{"RRethy/vim-illuminate"}, {
     dependencies = {"arkav/lualine-lsp-progress"},
     config = function()
         require('lualine').setup {
-        }
+	    }
     end
 }, {
     "nvim-tree/nvim-tree.lua",
@@ -162,7 +162,9 @@ require("lazy").setup({{"RRethy/vim-illuminate"}, {
     priority = 1000,
     config = function()
         vim.o.background = "dark"
-        vim.cmd.colorscheme("tokyonight-night")
+	    --vim.cmd.colorscheme("everforest")
+            --vim.cmd.colorscheme("tokyonight-night")
+    	    vim.cmd.colorscheme("catppuccin-mocha")
     end
 }, {
     "catppuccin/nvim",
